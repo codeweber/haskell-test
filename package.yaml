@@ -2,8 +2,8 @@ name:                haskell-test
 version:             0.1.0.0
 github:              "githubuser/haskell-test"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
+author:              "Dean Horton"
+maintainer:          "de_horton@hotmail.com"
 copyright:           "2021 Author name here"
 
 extra-source-files:
@@ -24,6 +24,8 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+  - split
 
 executables:
   haskell-test-exe:
@@ -46,3 +48,4 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - haskell-test
+    - HUnit
